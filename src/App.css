@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Roboto+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E9D28F;
+    color: #000;
+}
+#logoname {
+    height: 25px;
+  
+
+    font-family: Roboto Mono;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.logodescp {
+
+    font-family: IBM Plex Mono;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#menu li {
+    list-style: none;
+    cursor: pointer;
+}
+
+#buttons>button {
+    border-radius: 7px;
+    background: rgba(51, 51, 51, 0.86);
+    font-size: 12px;
+    color: #E9D28F;
+}
+
+
+#memories div:nth-child(1) {
+    font-family: Roboto Mono;
+    font-size: 25px;
+    font-weight: 500;
+
+}
+
+#memories div:nth-child(2) {
+    font-size: 16px;
+    font-weight: 200;
+
+}
+
+#searchbox {
+    width: 100%;
+    margin-top: 20px;
+    flex-shrink: 0;
+    background-color: #fff;
+    border-radius: 27px;
+    background: #FFF;
+    box-shadow: 0px 4px 5.2px 1px rgba(0, 0, 0, 0.25);
+    padding: 8px 15px;
+}
+
+#searchbox input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    font-size: 17px;
+    caret-color: #E9D28F;
+    color: #E9D28F;
+    
+}
+#searchbox input::placeholder{
+    color: #E9D28F;
+}
+
+/* clears the ‘X’ from Internet Explorer */
+#searchbox input::-ms-clear { display: none; width : 0; height: 0; }
+#searchbox input::-ms-reveal { display: none; width : 0; height: 0; }
+/* clears the ‘X’ from Chrome */
+#searchbox input::-webkit-search-decoration,
+#searchbox input::-webkit-search-cancel-button,
+#searchbox input::-webkit-search-results-button,
+#searchbox input::-webkit-search-results-decoration { display: none; }
+
+
+#add button{
+    border-radius: 7px;
+    background: rgba(51, 51, 51, 0.86);
+    font-size: 14px;
+    color: #E9D28F;
+}
+
+
+
+
+.aboutimg{
+    flex-basis: 30%;
+}
+.aboutdesp{
+    flex-basis: 70%;
+    
+}
+.aboutdesp h1{
+    font-family:Roboto Mono ;
+}
+
+.feature{
+    font-family: IBM Plex Mono;
+}
+
+
+#addmemo h1{
+    font-family: Roboto Mono;
+
+}
+#addmemo button{
+    border-radius: 7px;
+    background: rgba(51, 51, 51, 0.86);
+    font-size: 14px;
+    color: #E9D28F;
+}
+
+
+
+
+@media only screen and (max-width: 926px) {
+    .aboutimg{
+        flex-basis: 50%;
+    }
+    #slogandescp{
+        flex-basis: 40%;
+    }
+}
+@media only screen and (max-width: 843px) {
+    #slogandescp{
+        margin: 0;
+       
+    }
+    .aboutimg{
+        flex-basis: 60%;
+    }
+    #micon{
+        display: block
+    }
+    nav{
+        background-color: white;
+        position: fixed;
+        top: 0;
+        width: 100%;
+       
+    }
+    #memories{
+        margin-top: 100px;
+       flex-direction: column;
+    }
+    
+    #menu{
+        display: block;
+        position: fixed;
+        top: 28px;
+        right: -200px;
+        bottom: 0;
+        min-height: 200vh;
+        background-color: #ffffffe6;
+        padding:1.5rem;
+        margin-top: 20px;
+    }
+   
+    #menu li{
+        margin-top: 16px;
+        font-weight: 200;
+    }
+ 
+
+    #intro{
+        flex-direction: column-reverse;
+    }
+    #intro h1{
+        font-size: 25px;
+    }
+    #addmemo{
+        padding: 0 2rem;
+    }
+    #addmemo p{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 336px) {
+    #nav{
+        padding: 0.5rem 1rem;
+
+    }
+    #logoname{
+        font-size: 17px;
+        height: 18px;
+    }
+    #logodescp{
+        margin-top: 0;
+        font-size: 9px;
+    }
+
+}
