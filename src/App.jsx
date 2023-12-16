@@ -36,17 +36,17 @@ function App() {
           </div>
           <div className="hidden" id="micon" onClick={menu}><img src={Showmenu} className="h-[32px] w-[32px]" alt="" /></div>
           <div className="flex gap-7 menuopen" id="menu">
-            <li>HOME</li>
-            <li>ABOUT-US</li>
+            <li className="font-semibold">HOME</li>
+            <li className="font-semibold">ABOUT-US</li>
 
-            <li>ADD MEMORIAL</li>
-            <li>PRIVACY POLICY</li>
-            <li>CONTACT-US</li>
+            <li className="font-semibold">ADD MEMORIAL</li>
+            <li className="font-semibold">PRIVACY POLICY</li>
+            <li className="font-semibold">CONTACT-US</li>
           </div>
         </nav>
         <div id="memories" className=" flex flex-row justify-between items-center mt-10 gap-12 mx-8 " >
           <div className=""><img src={logo} alt=""/></div>
-          <div className="basis-[60%] m-14 md" id="slogandescp">
+          <div className="basis-[45%] m-14 md" id="slogandescp">
             <div className=" text-center  text-xl ">
 
               Hear The Stories of Other&apos;s Loved Ones
@@ -102,27 +102,3 @@ function App() {
 
 export default App;
 
-{
-  /* {/* <div className=' text-center mt-7 text-md' >LyfeIndex is a website where you can store and cherish the memories of your deceased loved ones. Keep their essence alive and share their stories with people around the globe.<br /></div> */
-}
-{
-  /* <div>
-                <label htmlFor="cars" className='ml-24'>Choose a Language:</label>
-
-                <select id="cars">
-                  <option value="volvo">English</option>
-                  <option value="saab">Hindi</option>
-                  <option value="opel">French</option>
-                  <option value="audi">Russian</option>
-                </select>
-              </div> */
-}
-
-{
-  /* <div className=' text-center text-base  ' >Wanna know about someone’s dearest or wanna make your loved ones known to others?</div> */
-}
-
-//   <div className='flex' id="add">
-//   <button className='px-4 py-2 mb-10' >ADD MEMORIAL</button>
-
-// </div>
